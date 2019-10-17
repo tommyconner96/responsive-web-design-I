@@ -73,8 +73,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .navbar {
-    width:100%;
-    display:flex;
+    width:800px;
 }
 
 .navbar a{
@@ -90,7 +89,7 @@ h1, h2, h3, h4, h5 {
 .navbar-container {
     display:flex;
     justify-content: space-around;
-    width: 100%
+    width: 100%;
 }
 
 .header {
@@ -166,7 +165,6 @@ display:flex;
 button {
     background-color:white;
     padding: 10px 15px;
-        }
 }
 
 .content {
@@ -179,11 +177,9 @@ button {
 /* .first-grid {
 	display:flex;
 }
-
 .second-grid {
 	display:flex;
 }
-
 .third-grid {
 	display:flex;
 } */
@@ -230,34 +226,30 @@ li {
 }
 
 @media (max-width:800px) {
+    body {
+        width: 800px;
+    }
     .header-right {
         display:none;
     }
     .navbar-container {
-        /* display: flex; */
+        display: flex;
         flex-direction: column-reverse;
     }
     .navbar-logo {
         text-align: center;
         padding-bottom: 30px;
     }
-
-    .navbar a {
-        width:100%;
-        padding: 40px;
-    }
-
     body {
         width:100%;
     }
     .top {
-        padding-left: 5px;
-        padding-right: 5px;
+        /* padding-left: 5px;
+        padding-right: 5px; */
+        flex-direction: row;
     }
-    .bottom {
-        padding-top: 20px;
-    }
-}
+
+    
 
 @media (max-width:500px) {
     body {
@@ -265,8 +257,9 @@ li {
     }
 
     .navbar{ 
-        flex-direction: column;
         width:100%;
+        display: flex;
+        flex-direction: column;
     }
 
     .navbar a {
@@ -278,6 +271,7 @@ li {
         padding-bottom: 11px;
         border-top: gray;
         border-style: solid;
+        flex-direction: row;
     
     }
     .navbar a:last-child {
@@ -292,6 +286,14 @@ li {
     .bottom {
         flex-direction: column;
     }
+    .left1 {
+        width: 100%;
+    }
+
+    .right1 {
+        width: 100%;
+    }
+
     .bottom .left2 {
         width: 100%;
     }
