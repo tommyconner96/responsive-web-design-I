@@ -73,7 +73,8 @@ h1, h2, h3, h4, h5 {
 }
 
 .navbar {
-    width:800px;
+    width:100%;
+    display:flex;
 }
 
 .navbar a{
@@ -163,7 +164,9 @@ display:flex;
 	width: 100%;
 }
 button {
-
+    background-color:white;
+    padding: 10px 15px;
+        }
 }
 
 .content {
@@ -231,18 +234,77 @@ li {
         display:none;
     }
     .navbar-container {
-        display: flex;
+        /* display: flex; */
         flex-direction: column-reverse;
     }
     .navbar-logo {
         text-align: center;
         padding-bottom: 30px;
     }
+
+    .navbar a {
+        width:100%;
+        padding: 40px;
+    }
+
     body {
-        width:800px;
+        width:100%;
     }
     .top {
         padding-left: 5px;
         padding-right: 5px;
+    }
+    .bottom {
+        padding-top: 20px;
+    }
+}
+
+@media (max-width:500px) {
+    body {
+        width:100%;
+    }
+
+    .navbar{ 
+        flex-direction: column;
+        width:100%;
+    }
+
+    .navbar a {
+        color: gray;
+        text-align: center;
+        text-decoration: none;
+        font-size: 17px;
+        padding-top: 11px;
+        padding-bottom: 11px;
+        border-top: gray;
+        border-style: solid;
+    
+    }
+    .navbar a:last-child {
+        border-bottom: gray;
+        border-style: solid;
+    }
+
+    }
+    .top {
+        flex-direction: column;
+    }
+    .bottom {
+        flex-direction: column;
+    }
+    .bottom .left2 {
+        width: 100%;
+    }
+    
+    .bottom .middle2 {
+        width: 100%;
+    }
+    
+    .bottom .right2 {
+        width: 100%;
+    }
+
+    h2 {
+        padding-top: 25px;
     }
 }
